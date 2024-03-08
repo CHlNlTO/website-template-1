@@ -3,6 +3,7 @@
 import { InstagramLogoIcon } from "@radix-ui/react-icons";
 import { Facebook, Mail, Phone } from "lucide-react";
 import Link from "next/link";
+import { useState } from "react";
 import { FaFacebookF, FaInstagram, FaTiktok } from "react-icons/fa6";
 
 interface IconProps {
@@ -17,14 +18,16 @@ const tiktok = "https://tiktok.com"
 
 export function Navbar() {
 
-  function handleCopy(text: string) {
-    const el = document.createElement("textarea");
-    el.value = text;
-    document.body.appendChild(el);
-    el.select();
-    document.execCommand("copy");
-    document.body.removeChild(el);
-  }
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = async (text: string) => {
+    try {
+      await navigator.clipboard.writeText(text);
+      setCopied(true);
+    } catch (err) {
+      console.error('Failed to copy:', err);
+    }
+  };
 
   return (
     <header>
