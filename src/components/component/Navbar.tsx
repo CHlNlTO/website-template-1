@@ -16,18 +16,27 @@ const facebook = "https://facebook.com"
 const instagram = "https://instagram.com"
 const tiktok = "https://tiktok.com"
 
+import { ToastAction } from "@/components/ui/toast"
+import { useToast } from "@/components/ui/use-toast"
+
 export function Navbar() {
 
   const [copied, setCopied] = useState(false);
+  const { toast } = useToast()
 
   const handleCopy = async (text: string) => {
     try {
       await navigator.clipboard.writeText(text);
       setCopied(true);
+      toast({
+        description: "Text has been copied.",
+      });
     } catch (err) {
       console.error('Failed to copy:', err);
     }
   };
+
+
 
   return (
     <header>
