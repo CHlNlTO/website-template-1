@@ -1,3 +1,5 @@
+"use client";
+
 import { InstagramLogoIcon } from "@radix-ui/react-icons";
 import { Facebook, Mail, Phone } from "lucide-react";
 import Link from "next/link";
@@ -7,20 +9,36 @@ interface IconProps {
   className?: string;
 }
 
+const email = "inquiries@business.name"
+const phone = "123-456-7890"
+const facebook = "https://facebook.com"
+const instagram = "https://instagram.com"
+const tiktok = "https://tiktok.com"
+
 export function Navbar() {
+
+  function handleCopy(text: string) {
+    const el = document.createElement("textarea");
+    el.value = text;
+    document.body.appendChild(el);
+    el.select();
+    document.execCommand("copy");
+    document.body.removeChild(el);
+  }
+
   return (
     <header>
       <section className="px-4 lg:px-6 h-5 flex items-center justify-end gap-5 lg:gap-10 bg-gray-100 dark:bg-gray-800">
         <div className="flex items-center justify-end gap-1">
           <Mail className="h-3 w-3"></Mail>
-          <p className="text-[10px] lg:text-[12px] font-medium hover:underline underline-offset-4">
-            inquiries@business.name
+          <p className="text-[10px] lg:text-[12px] font-medium hover:underline underline-offset-4 cursor-pointer" onClick={(event: React.MouseEvent<HTMLParagraphElement>) => handleCopy(email)}>
+            {email}
           </p>
         </div>
         <div className="flex items-center justify-end gap-1">
           <Phone className="h-3 w-3 fill-white"></Phone>
-          <p className="text-[8px] lg:text-[12px] font-medium hover:underline underline-offset-4">
-            123-456-7890
+          <p className="text-[8px] lg:text-[12px] font-medium hover:underline underline-offset-4 cursor-pointer" onClick={(event: React.MouseEvent<HTMLParagraphElement>) => handleCopy(phone)}>
+            {phone}
           </p>
         </div>
         <div className="flex items-center justify-end gap-5">

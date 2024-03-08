@@ -6,7 +6,7 @@ import Link from "next/link"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
-
+import { ContactCard } from "@/components/component/ContactCard"
 
 import constructionImage1 from "@/assets/construction_image1.jpg"
 import constructionImage2 from "@/assets/construction_image2.jpg"
@@ -21,8 +21,10 @@ import constructionImage10 from "@/assets/construction_image10.jpg"
 import person1 from "@/assets/person1.jpg"
 import person2 from "@/assets/person2.jpg"
 import person3 from "@/assets/person3.jpg"
+import { ServiceList } from "@/components/component/ServiceList"
 
 export function Homepage() {
+
   return (
     <div className="flex flex-col min-h-[100dvh]">
       <main className="flex-1">
@@ -45,8 +47,9 @@ export function Homepage() {
             Expertise. Craftsmanship. Excellence. Your trusted partner in construction.
           </p>
         </div>
-        <form className="flex flex-col gap-2 min-[400px]:flex-row">
+        <form className="flex flex-col gap-2 min-[510px]:flex-row">
           <Input className="max-w-sm flex-1" placeholder="Enter your email" type="email" />
+          <ServiceList />
           <Button size="lg">Contact us</Button>
         </form>
       </div>
@@ -274,19 +277,14 @@ export function Homepage() {
           </div>
         </section>
         <section className="w-full py-12 md:py-24 lg:py-32 border-t">
+          <div className="flex flex-col items-center justify-center space-y-4 text-center">
+            <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl">Ready to start your project?</h1>
+            <p className="max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400 pb-10">
+              Our dedication lies in delivering superior construction services, emphasizing creativity and positive engagement. Reach out to us.
+            </p>
+          </div>
           <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6">
-            <div className="space-y-3">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Contact Us</h2>
-              <p className="mx-auto max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                Ready to start your project? Reach out to us.
-              </p>
-            </div>
-            <div className="mx-auto w-full max-sm space-y-2">
-              <form className="flex flex-col gap-2 min-[400px]:flex-row">
-                <Input className="max-w-md flex-1" placeholder="Enter your email" type="email" />
-                <Button size="lg">Contact Us</Button>
-              </form>
-            </div>
+            <ContactCard />
           </div>
         </section>
       </main>

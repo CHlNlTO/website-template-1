@@ -10,6 +10,7 @@ import featuredService7 from "@/assets/featured_service7.jpg";
 import featuredService8 from "@/assets/featured_service8.jpg";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import { ContactCard } from "@/components/component/ContactCard";
 
 export function Services() {
   return (
@@ -137,21 +138,18 @@ export function Services() {
       </div>
       <section className="w-full py-12 md:py-24 lg:py-32 border-t">
         <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6">
-          <div className="space-y-3">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Contact Us</h2>
-            <p className="mx-auto max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-              Ready to start your project? Reach out to us.
+          <div className="flex flex-col items-center justify-center space-y-4 text-center">
+            <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl">Ready to start your project?</h1>
+            <p className="max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
+              Our dedication lies in delivering superior construction services, emphasizing creativity and positive engagement. Reach out to us.
             </p>
           </div>
-          <div className="mx-auto w-full max-sm space-y-2">
-            <form className="flex flex-col gap-2 min-[400px]:flex-row">
-              <Input className="max-w-md flex-1" placeholder="Enter your email" type="email" />
-              <Button size="lg">Contact Us</Button>
-            </form>
+          <div className="flex flex-col items-center justify-center space-y-4 text-center">
+            <ContactCard />
           </div>
         </div>
       </section>
-      <section className="w-full py-12 lg:py-24">
+      <section className="w-full">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Our Materials</h2>
