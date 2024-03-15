@@ -33,7 +33,7 @@ export function About() {
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Our Values</h2>
                 <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  We're guided by a set of core values that inform everything we do. Transparency. Collaboration.
+                  We&apos;re guided by a set of core values that inform everything we do. Transparency. Collaboration.
                   Empathy. Inclusivity. Continuous improvement.
                 </p>
               </div>
@@ -46,7 +46,7 @@ export function About() {
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Meet the Team</h2>
                 <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  We're a diverse team of engineers, designers, and advocates who are passionate about the web.
+                  We&apos;re a diverse team of engineers, designers, and advocates who are passionate about the web.
                 </p>
               </div>
             </div>
@@ -64,7 +64,7 @@ export function About() {
                   <p className="text-sm text-gray-500 dark:text-gray-400">VP of Web3</p>
                 </div>
                 <p className="text-sm text-gray-500 md:text-base/relaxed lg:text-xl/relaxed xl:text-base/relaxed dark:text-gray-400">
-                  Sarah is a developer advocate with a focus on Web3. She's passionate about making the web more open,
+                  Sarah is a developer advocate with a focus on Web3. She&apos;s passionate about making the web more open,
                   secure, and decentralized.
                 </p>
               </div>
@@ -81,7 +81,7 @@ export function About() {
                   <p className="text-sm text-gray-500 dark:text-gray-400">Co-Founder</p>
                 </div>
                 <p className="text-sm text-gray-500 md:text-base/relaxed lg:text-xl/relaxed xl:text-base/relaxed dark:text-gray-400">
-                  Tim is the co-creator of Next.js and the co-founder of Vercel. He's on a mission to make building web
+                  Tim is the co-creator of Next.js and the co-founder of Vercel. He&apos;s on a mission to make building web
                   applications as seamless as possible.
                 </p>
               </div>
@@ -94,7 +94,7 @@ export function About() {
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Join the Team</h2>
                 <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  We're always looking for talented and passionate individuals to join our team. Check out our careers
+                  We&apos;re always looking for talented and passionate individuals to join our team. Check out our careers
                   page for current openings.
                 </p>
               </div>
