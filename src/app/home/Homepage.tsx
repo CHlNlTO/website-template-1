@@ -41,7 +41,7 @@ export function Homepage() {
       <div className="container flex flex-col items-center justify-center gap-4 px-4 text-center md:px-6 relative z-10">
         <div className="space-y-3 bg-opacity-50 bg-gray-100 dark:bg-gray-900 p-4 rounded-lg">
           <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-gray-900 dark:text-white">
-            Quality Construction Hatdog
+            Quality Construction Services
           </h1>
           <p className="mx-auto max-w-[600px] text-gray-900 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-white">
             Expertise. Craftsmanship. Excellence. Your trusted partner in construction.
