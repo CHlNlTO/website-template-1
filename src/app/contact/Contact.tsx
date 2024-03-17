@@ -3,6 +3,8 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import { FaFacebookF, FaInstagram, FaTiktok, FaYoutube } from "react-icons/fa6"
+import { LinkedInLogoIcon, TwitterLogoIcon } from "@radix-ui/react-icons"
 
 interface IconProps {
   className?: string;
@@ -35,36 +37,36 @@ export function Contact() {
           </div>
           <Button>Send message</Button>
         </div>
-        <div className="space-y-4">
+        <div className="space-y-10">
           <h3 className="text-xl font-bold">Connect with us</h3>
           <div className="grid grid-cols-3 items-center gap-4 text-center">
-            <Link className="flex flex-col gap-1.5 text-sm opacity-60 hover:opacity-100" href="#">
-              <StarIcon className="mx-auto w-6 h-6" />
+            <Link className="flex flex-col gap-1.5 text-sm opacity-60 hover:opacity-100" href="https://www.facebook.com" target="_blank" passHref>
+              <FaFacebookF className="mx-auto w-6 h-6" />
               <span className="sr-only">Facebook</span>
               Facebook
             </Link>
-            <Link className="flex flex-col gap-1.5 text-sm opacity-60 hover:opacity-100" href="#">
-              <StarIcon className="mx-auto w-6 h-6" />
+            <Link className="flex flex-col gap-1.5 text-sm opacity-60 hover:opacity-100" href="https://www.instagram.com"  target="_blank" passHref>
+              <FaInstagram className="mx-auto w-6 h-6" />
               <span className="sr-only">Instagram</span>
               Instagram
             </Link>
-            <Link className="flex flex-col gap-1.5 text-sm opacity-60 hover:opacity-100" href="#">
-              <StarIcon className="mx-auto w-6 h-6" />
+            <Link className="flex flex-col gap-1.5 text-sm opacity-60 hover:opacity-100" href="https://www.twitter.com" target="_blank" passHref>
+              <TwitterLogoIcon className="mx-auto w-6 h-6" />
               <span className="sr-only">Twitter</span>
               Twitter
             </Link>
-            <Link className="flex flex-col gap-1.5 text-sm opacity-60 hover:opacity-100" href="#">
-              <StarIcon className="mx-auto w-6 h-6" />
+            <Link className="flex flex-col gap-1.5 text-sm opacity-60 hover:opacity-100" href="https://www.linkedin.com" target="_blank" passHref>
+              <LinkedInLogoIcon className="mx-auto w-6 h-6" />
               <span className="sr-only">LinkedIn</span>
               LinkedIn
             </Link>
-            <Link className="flex flex-col gap-1.5 text-sm opacity-60 hover:opacity-100" href="#">
-              <StarIcon className="mx-auto w-6 h-6" />
+            <Link className="flex flex-col gap-1.5 text-sm opacity-60 hover:opacity-100" href="https://www.youtube.com" target="_blank" passHref>
+              <FaYoutube className="mx-auto w-6 h-6" />
               <span className="sr-only">YouTube</span>
               YouTube
             </Link>
-            <Link className="flex flex-col gap-1.5 text-sm opacity-60 hover:opacity-100" href="#">
-              <StarIcon className="mx-auto w-6 h-6" />
+            <Link className="flex flex-col gap-1.5 text-sm opacity-60 hover:opacity-100" href="https://www.tiktok.com" target="_blank" passHref>
+              <FaTiktok className="mx-auto w-6 h-6" />
               <span className="sr-only">TikTok</span>
               TikTok
             </Link>

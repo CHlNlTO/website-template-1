@@ -1,7 +1,7 @@
 import { Label } from "../ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../ui/select";
 
-export function ServiceList() {
+export function ServiceList(): JSX.Element {
   return (
     <div className="flex flex-col space-y-1.5 items-start max-w-sm flex-1">
       <Select>

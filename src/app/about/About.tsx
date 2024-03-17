@@ -1,3 +1,4 @@
+import Image from "next/image"
 import Link from "next/link"
 
 export function About() {
@@ -20,8 +21,7 @@ export function About() {
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Our Mission</h2>
                 <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  We believe in the power of the web to connect people and ideas. Our mission is to make the web more
-                  accessible, performant, and secure for everyone.
+                  Deliver exceptional construction solutions that exceed our clients&apos; expectations, uphold the highest standards of quality and safety, and contribute positively to the communities we serve. We are committed to fostering lasting relationships built on trust, integrity, and excellence.
                 </p>
               </div>
             </div>
@@ -33,8 +33,7 @@ export function About() {
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Our Values</h2>
                 <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  We&apos;re guided by a set of core values that inform everything we do. Transparency. Collaboration.
-                  Empathy. Inclusivity. Continuous improvement.
+                  We are guided by integrity, quality, safety, innovation, collaboration, community, and continuous improvement. These core values drive us to deliver exceptional construction solutions while fostering trust, safety, innovation, and positive community impact.
                 </p>
               </div>
             </div>
@@ -46,13 +45,13 @@ export function About() {
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Meet the Team</h2>
                 <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  We&apos;re a diverse team of engineers, designers, and advocates who are passionate about the web.
+                  We&apos;re a diverse team of engineers, designers, and advocates who are passionate about our work.
                 </p>
               </div>
             </div>
             <div className="mx-auto w-full max-w-5xl grid gap-6 lg:grid-cols-2 lg:gap-12">
               <div className="flex flex-col gap-1">
-                <img
+                <Image
                   alt="Avatar"
                   className="mx-auto aspect-square rounded-full overflow-hidden object-cover object-center"
                   height="500"
@@ -69,7 +68,7 @@ export function About() {
                 </p>
               </div>
               <div className="flex flex-col gap-1">
-                <img
+                <Image
                   alt="Avatar"
                   className="mx-auto aspect-square rounded-full overflow-hidden object-cover object-center"
                   height="500"
@@ -108,17 +107,6 @@ export function About() {
           </div>
         </section>
       </main>
-      <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
-        <p className="text-xs text-gray-500 dark:text-gray-400">© 2024 Acme Inc. All rights reserved.</p>
-        <nav className="sm:ml-auto flex gap-4 sm:gap-6">
-          <Link className="text-xs hover:underline underline-offset-4" href="#">
-            Terms of Service
-          </Link>
-          <Link className="text-xs hover:underline underline-offset-4" href="#">
-            Privacy
-          </Link>
-        </nav>
-      </footer>
     </div>
   )
 }

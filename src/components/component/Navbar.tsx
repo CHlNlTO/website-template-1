@@ -65,10 +65,10 @@ export function Navbar() {
           </Link>
         </div>
       </section>
-      <section className="px-4 lg:px-6 h-14 flex items-center">
+      <section className="px-4 lg:px-6 h-14 flex items-center border-b-[.1px] border-gray-100 border-opacity-1">
           <Link className="text-sm font-extrabold flex items-center justify-center gap-4" href="/">
             <MountainIcon className="h-6 w-6" />
-            <span className="hidden sm:block">Business Name</span>
+            <span className="hidden sm:block">Construction Inc</span>
             <span className="sr-only ">Construction Inc</span>
           </Link>
           <nav className="ml-auto flex gap-4 sm:gap-6">

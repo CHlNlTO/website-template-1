@@ -15,8 +15,8 @@ import { ContactCard } from "@/components/component/ContactCard";
 export function Services() {
   return (
     <main>
-      <div className="bg-gray-50 py-12 lg:py-24">
-        <div className="container px-4 py-6 md:py-10 space-y-6">
+      <div className="bg-gray-50 py-12 lg:py-8">
+        <div className="container px-4 py-1 md:py-10 space-y-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl">Building the future</h1>
             <p className="max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
@@ -25,7 +25,7 @@ export function Services() {
             </p>
           </div>
           <div className="grid w-full grid-cols-1 gap-6 sm:grid-cols-2 md:gap-8 lg:grid-cols-3">
-              <div className="flex flex-col gap-2 items-center">
+              <div className="flex flex-col gap-2 items-center space-y-1">
                 <Image
                   alt="Services"
                   className="aspect-video overflow-hidden rounded-lg object-cover object-center"
@@ -40,7 +40,7 @@ export function Services() {
                   </p>
                 </div>
               </div>
-              <div className="flex flex-col gap-2 items-center">
+              <div className="flex flex-col gap-2 items-center space-y-1">
                 <Image
                   alt="Services"
                   className="aspect-video overflow-hidden rounded-lg object-cover object-center"
@@ -55,7 +55,7 @@ export function Services() {
                   </p>
                 </div>
               </div>
-              <div className="flex flex-col gap-2 items-center">
+              <div className="flex flex-col gap-2 items-center space-y-1">
                 <Image
                   alt="Services"
                   className="aspect-video overflow-hidden rounded-lg object-cover object-center"
@@ -68,7 +68,7 @@ export function Services() {
                   <p className="text-sm text-gray-500 dark:text-gray-400">Revitalize your living or working environment with our renovation services. From updating outdated spaces to reimagining layouts, we breathe new life into existing structures, enhancing their aesthetic appeal and functionality.</p>
                 </div>
               </div>
-              <div className="flex flex-col gap-2 items-center">
+              <div className="flex flex-col gap-2 items-center space-y-1">
                 <Image
                   alt="Services"
                   className="aspect-video overflow-hidden rounded-lg object-cover object-center"
@@ -81,7 +81,7 @@ export function Services() {
                   <p className="text-sm text-gray-500 dark:text-gray-400">Elevate your outdoor space with our landscaping expertise. From lush gardens to tranquil retreats, we craft customized designs that harmonize with nature, creating inviting and sustainable landscapes that enrich your surroundings.</p>
                 </div>
               </div>
-              <div className="flex flex-col gap-2 items-center">
+              <div className="flex flex-col gap-2 items-center space-y-1">
                 <Image
                   alt="Services"
                   className="aspect-video overflow-hidden rounded-lg object-cover object-center"
@@ -94,7 +94,7 @@ export function Services() {
                   <p className="text-sm text-gray-500 dark:text-gray-400">From concept to completion, our construction services bring visions to reality. With meticulous attention to detail and a commitment to quality craftsmanship, we deliver projects that stand the test of time, tailored to your needs and aspirations.</p>
                 </div>
               </div>
-              <div className="flex flex-col gap-2 items-center">
+              <div className="flex flex-col gap-2 items-center space-y-1">
                 <Image
                   alt="Services"
                   className="aspect-video overflow-hidden rounded-lg object-cover object-center"
@@ -107,7 +107,7 @@ export function Services() {
                   <p className="text-sm text-gray-500 dark:text-gray-400">Restore functionality and beauty to your property with our repair services. Whether it&apos;s fixing structural damage, addressing wear and tear, or tackling unexpected issues, our skilled technicians provide prompt and reliable solutions to keep your space in top condition.</p>
                 </div>
               </div>
-              <div className="flex flex-col gap-2 items-center">
+              <div className="flex flex-col gap-2 items-center space-y-1">
                 <Image
                   alt="Services"
                   className="aspect-video overflow-hidden rounded-lg object-cover object-center"
@@ -120,7 +120,7 @@ export function Services() {
                   <p className="text-sm text-gray-500 dark:text-gray-400">Unlock the potential of your space with our innovative design solutions. From conceptualizing layouts to selecting finishes, our team of creatives brings your vision to life, infusing every project with style, functionality, and personality.</p>
                 </div>
               </div>
-              <div className="flex flex-col gap-2 items-center">
+              <div className="flex flex-col gap-2 items-center space-y-1">
                 <Image
                   alt="Services"
                   className="aspect-video overflow-hidden rounded-lg object-cover object-center"
@@ -136,7 +136,7 @@ export function Services() {
             </div>
         </div>
       </div>
-      <section className="w-full py-12 md:py-24 lg:py-32 border-t">
+      <section className="w-full py-12 md:py-24 lg:py-28 border-t">
         <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl">Ready to start your project?</h1>
