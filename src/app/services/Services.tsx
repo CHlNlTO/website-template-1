@@ -1,5 +1,3 @@
-"use client"
-
 import Image from "next/image";
 import { ContactCard } from "@/components/component/ContactCard";
 
@@ -15,17 +13,7 @@ import projectMaterial1 from "@/assets/material_image1.jpg"
 import projectMaterial2 from "@/assets/material_image2.jpg"
 import projectMaterial3 from "@/assets/material_image3.jpg"
 
-import { useState } from "react"
-import { Skeleton } from "@/components/ui/skeleton";
-
 export function Services() {
-  const [loading, setLoading] = useState(true);
-  const [imageLoaded, setImageLoaded] = useState(false);
-
-  const handleLoad = () => {
-    setLoading(false);
-    setImageLoaded(true);
-  };;
 
   return (
     <main>
@@ -40,14 +28,12 @@ export function Services() {
           </div>
           <div className="grid w-full grid-cols-1 gap-20 sm:grid-cols-2 md:gap-8 lg:grid-cols-3">
             <div className="flex flex-col gap-2 items-center space-y-1">
-              {loading && <Skeleton className="w-[400px] h-[225px]" /> }
               <Image
                 alt="Services"
-                className={`${imageLoaded? "aspect-video overflow-hidden rounded-lg object-cover object-center" : 'hidden'}`}
+                className="aspect-video overflow-hidden rounded-lg object-cover object-center"
                 height="225"
                 src={featuredService1}
                 width="400"
-                onLoad={handleLoad}
               />
               <div className="flex flex-col items-center gap-1">
                 <h3 className="font-bold">Architecture</h3>
@@ -57,14 +43,12 @@ export function Services() {
               </div>
             </div>
             <div className="flex flex-col gap-2 items-center space-y-1">
-            {loading && <Skeleton className="w-[400px] h-[225px]" /> }
-            <Image
+              <Image
                 alt="Services"
-                className={`${imageLoaded? "aspect-video overflow-hidden rounded-lg object-cover object-center" : 'hidden'}`}
+                className="aspect-video overflow-hidden rounded-lg object-cover object-center"
                 height="225"
                 src={featuredService2}
                 width="400"
-                onLoad={handleLoad}
               />
               <div className="flex flex-col items-center gap-1">
                 <h3 className="font-bold">Engineering</h3>
@@ -74,10 +58,9 @@ export function Services() {
               </div>
             </div>
             <div className="flex flex-col gap-2 items-center space-y-1">
-              {loading && <Skeleton className="w-[400px] h-[225px]" /> }
               <Image
                 alt="Services"
-                className={`${imageLoaded? "aspect-video overflow-hidden rounded-lg object-cover object-center" : 'hidden'}`}
+                className="aspect-video overflow-hidden rounded-lg object-cover object-center"
                 height="225"
                 src={featuredService3}
                 width="400"
@@ -88,10 +71,9 @@ export function Services() {
               </div>
             </div>
             <div className="flex flex-col gap-2 items-center space-y-1">
-              {loading && <Skeleton className="w-[400px] h-[225px]" /> }
               <Image
                 alt="Services"
-                className={`${imageLoaded? "aspect-video overflow-hidden rounded-lg object-cover object-center" : 'hidden'}`}
+                className="aspect-video overflow-hidden rounded-lg object-cover object-center"
                 height="225"
                 src={featuredService4}
                 width="400"
@@ -102,10 +84,9 @@ export function Services() {
               </div>
             </div>
             <div className="flex flex-col gap-2 items-center space-y-1">
-              {loading && <Skeleton className="w-[400px] h-[225px]" /> }
               <Image
                 alt="Services"
-                className={`${imageLoaded? "aspect-video overflow-hidden rounded-lg object-cover object-center" : 'hidden'}`}
+                className="aspect-video overflow-hidden rounded-lg object-cover object-center"
                 height="225"
                 src={featuredService5}
                 width="400"
@@ -116,10 +97,9 @@ export function Services() {
               </div>
             </div>
             <div className="flex flex-col gap-2 items-center space-y-1">
-              {loading && <Skeleton className="w-[400px] h-[225px]" /> }
               <Image
                 alt="Services"
-                className={`${imageLoaded? "aspect-video overflow-hidden rounded-lg object-cover object-center" : 'hidden'}`}
+                className="aspect-video overflow-hidden rounded-lg object-cover object-center"
                 height="225"
                 src={featuredService6}
                 width="400"
@@ -130,10 +110,9 @@ export function Services() {
               </div>
             </div>
             <div className="flex flex-col gap-2 items-center space-y-1">
-              {loading && <Skeleton className="w-[400px] h-[225px]" /> }
               <Image
                 alt="Services"
-                className={`${imageLoaded? "aspect-video overflow-hidden rounded-lg object-cover object-center" : 'hidden'}`}
+                className="aspect-video overflow-hidden rounded-lg object-cover object-center"
                 height="225"
                 src={featuredService7}
                 width="400"
@@ -144,10 +123,9 @@ export function Services() {
               </div>
             </div>
             <div className="flex flex-col gap-2 items-center space-y-1">
-              {loading && <Skeleton className="w-[400px] h-[225px]" /> }
               <Image
                 alt="Services"
-                className={`${imageLoaded? "aspect-video overflow-hidden rounded-lg object-cover object-center" : 'hidden'}`}
+                className="aspect-video overflow-hidden rounded-lg object-cover object-center"
                 height="225"
                 src={featuredService8}
                 width="400"
