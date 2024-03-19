@@ -124,8 +124,8 @@ export function ContactCard() {
               </FormItem>
             )}
           />
-      <CardFooter className="flex justify-start">
-        <Button type="submit">Submit</Button>
+      <CardFooter className="flex items-start justify-start">
+        <Button type="submit">Contact Us</Button>
       </CardFooter>
         </form>
       </Form>

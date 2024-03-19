@@ -1,6 +1,9 @@
 import Image from "next/image"
 import Link from "next/link"
 
+import teamPerson1 from "@/assets/team_person1.jpg"
+import teamPerson2 from "@/assets/team_person2.jpg"
+
 export function About() {
   return (
     <div className="flex flex-col min-h-[100dvh]">
@@ -41,7 +44,7 @@ export function About() {
         </section>
         <section className="w-full py-12 md:py-24 lg:py-32 border-t">
           <div className="container grid items-center gap-6 px-4 md:px-6">
-            <div className="mx-auto w-full max-w-2xl space-y-4">
+            <div className="mx-auto w-full max-w-2xl mb-10">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Meet the Team</h2>
                 <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
@@ -54,9 +57,9 @@ export function About() {
                 <Image
                   alt="Avatar"
                   className="mx-auto aspect-square rounded-full overflow-hidden object-cover object-center"
-                  height="500"
-                  src="/placeholder.svg"
-                  width="500"
+                  height="250"
+                  src={teamPerson1}
+                  width="250"
                 />
                 <div className="flex flex-col gap-1">
                   <h3 className="text-xl font-bold">Sarah Dayan</h3>
@@ -71,9 +74,9 @@ export function About() {
                 <Image
                   alt="Avatar"
                   className="mx-auto aspect-square rounded-full overflow-hidden object-cover object-center"
-                  height="500"
-                  src="/placeholder.svg"
-                  width="500"
+                  height="250"
+                  src={teamPerson2}
+                  width="250"
                 />
                 <div className="flex flex-col gap-1">
                   <h3 className="text-xl font-bold">Tim Neutkens</h3>
@@ -84,25 +87,6 @@ export function About() {
                   applications as seamless as possible.
                 </p>
               </div>
-            </div>
-          </div>
-        </section>
-        <section className="w-full py-12 md:py-24 lg:py-32 border-t">
-          <div className="container grid items-center gap-6 px-4 md:px-6">
-            <div className="mx-auto w-full max-w-2xl space-y-4">
-              <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Join the Team</h2>
-                <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  We&apos;re always looking for talented and passionate individuals to join our team. Check out our careers
-                  page for current openings.
-                </p>
-              </div>
-              <Link
-                className="inline-flex h-9 items-center justify-center rounded-md bg-gray-900 px-4 py-2 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
-                href="#"
-              >
-                View Openings
-              </Link>
             </div>
           </div>
         </section>

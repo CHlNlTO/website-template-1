@@ -12,14 +12,13 @@ import featuredProject8 from "@/assets/featured_project8.jpg"
 import featuredProject9 from "@/assets/featured_project9.jpg"
 import featuredProject10 from "@/assets/featured_project10.jpg"
 
-
 export function Projects() {
   return (
     <section className="w-full">
       <main className="container mx-auto px-4 md:px-6 py-8">
-        <section className="mb-8">
+        <section className="mb-24">
           <h2 className="text-2xl font-bold mb-4">Top Construction Project</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             <div>
               <Image
                 alt="Top Construction Project Image"
@@ -44,9 +43,9 @@ export function Projects() {
             </div>
           </div>
         </section>
-        <section className="mb-8">
+        <section className="mb-24">
           <h2 className="text-2xl font-bold mb-4">Residential Projects</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
             <div>
               <Image
                 alt="Luxury Villa Construction Image"
@@ -109,9 +108,9 @@ export function Projects() {
             </div>
           </div>
         </section>
-        <section className="mb-8">
+        <section className="mb-24">
           <h2 className="text-2xl font-bold mb-4">Commercial Projects</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
             <div>
               <Image
                 alt="Shopping Mall Construction Image"
@@ -174,9 +173,9 @@ export function Projects() {
             </div>
           </div>
         </section>
-        <section className="mb-8">
+        <section className="mb-24">
           <h2 className="text-2xl font-bold mb-4">Infrastructure Projects</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
             <div>
               <Image
                 alt="Bridge Construction Image"
