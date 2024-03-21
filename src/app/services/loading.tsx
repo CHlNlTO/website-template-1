@@ -1,16 +1,9 @@
 import Image from "next/image";
 
-import featuredService1 from "@/assets/featured_service1.jpg";
-import featuredService2 from "@/assets/featured_service2.jpg";
-import featuredService3 from "@/assets/featured_service3.jpg";
-import featuredService4 from "@/assets/featured_service4.jpg";
-import featuredService5 from "@/assets/featured_service5.jpg";
-import featuredService6 from "@/assets/featured_service6.jpg";
-import featuredService7 from "@/assets/featured_service7.jpg";
-import featuredService8 from "@/assets/featured_service8.jpg";
 import { ContactCard } from "@/components/component/ContactCard";
+import { Skeleton } from "@/components/ui/skeleton";
 
-export function Services() {
+export default function Loading() {
   return (
     <main>
       <div className="bg-gray-50 py-12 lg:py-8">
@@ -24,13 +17,7 @@ export function Services() {
           </div>
           <div className="grid w-full grid-cols-1 gap-6 sm:grid-cols-2 md:gap-8 lg:grid-cols-3">
               <div className="flex flex-col gap-2 items-center space-y-1">
-                <Image
-                  alt="Services"
-                  className="aspect-video overflow-hidden rounded-lg object-cover object-center"
-                  height="225"
-                  src={featuredService1}
-                  width="400"
-                />
+                <Skeleton className="w-[400px] h-[225px]" />
                 <div className="flex flex-col items-center gap-1">
                   <h3 className="font-bold">Architecture</h3>
                   <p className="text-sm text-gray-500 dark:text-gray-400">
@@ -39,13 +26,7 @@ export function Services() {
                 </div>
               </div>
               <div className="flex flex-col gap-2 items-center space-y-1">
-                <Image
-                  alt="Services"
-                  className="aspect-video overflow-hidden rounded-lg object-cover object-center"
-                  height="225"
-                  src={featuredService2}
-                  width="400"
-                />
+                <Skeleton className="w-[400px] h-[225px]" />
                 <div className="flex flex-col items-center gap-1">
                   <h3 className="font-bold">Engineering</h3>
                   <p className="text-sm text-gray-500 dark:text-gray-400">
@@ -54,78 +35,42 @@ export function Services() {
                 </div>
               </div>
               <div className="flex flex-col gap-2 items-center space-y-1">
-                <Image
-                  alt="Services"
-                  className="aspect-video overflow-hidden rounded-lg object-cover object-center"
-                  height="225"
-                  src={featuredService3}
-                  width="400"
-                />
+                <Skeleton className="w-[400px] h-[225px]" />
                 <div className="flex flex-col items-center gap-1">
                   <h3 className="font-bold">Renovation</h3>
                   <p className="text-sm text-gray-500 dark:text-gray-400">Revitalize your living or working environment with our renovation services. From updating outdated spaces to reimagining layouts, we breathe new life into existing structures, enhancing their aesthetic appeal and functionality.</p>
                 </div>
               </div>
               <div className="flex flex-col gap-2 items-center space-y-1">
-                <Image
-                  alt="Services"
-                  className="aspect-video overflow-hidden rounded-lg object-cover object-center"
-                  height="225"
-                  src={featuredService4}
-                  width="400"
-                />
+                <Skeleton className="w-[400px] h-[225px]" />
                 <div className="flex flex-col items-center gap-1">
                   <h3 className="font-bold">Landscaping</h3>
                   <p className="text-sm text-gray-500 dark:text-gray-400">Elevate your outdoor space with our landscaping expertise. From lush gardens to tranquil retreats, we craft customized designs that harmonize with nature, creating inviting and sustainable landscapes that enrich your surroundings.</p>
                 </div>
               </div>
               <div className="flex flex-col gap-2 items-center space-y-1">
-                <Image
-                  alt="Services"
-                  className="aspect-video overflow-hidden rounded-lg object-cover object-center"
-                  height="225"
-                  src={featuredService5}
-                  width="400"
-                />
+                <Skeleton className="w-[400px] h-[225px]" />
                 <div className="flex flex-col items-center gap-1">
                   <h3 className="font-bold">Construction</h3>
                   <p className="text-sm text-gray-500 dark:text-gray-400">From concept to completion, our construction services bring visions to reality. With meticulous attention to detail and a commitment to quality craftsmanship, we deliver projects that stand the test of time, tailored to your needs and aspirations.</p>
                 </div>
               </div>
               <div className="flex flex-col gap-2 items-center space-y-1">
-                <Image
-                  alt="Services"
-                  className="aspect-video overflow-hidden rounded-lg object-cover object-center"
-                  height="225"
-                  src={featuredService6}
-                  width="400"
-                />
+                <Skeleton className="w-[400px] h-[225px]" />
                 <div className="flex flex-col items-center gap-1">
                   <h3 className="font-bold">Repair</h3>
                   <p className="text-sm text-gray-500 dark:text-gray-400">Restore functionality and beauty to your property with our repair services. Whether it&apos;s fixing structural damage, addressing wear and tear, or tackling unexpected issues, our skilled technicians provide prompt and reliable solutions to keep your space in top condition.</p>
                 </div>
               </div>
               <div className="flex flex-col gap-2 items-center space-y-1">
-                <Image
-                  alt="Services"
-                  className="aspect-video overflow-hidden rounded-lg object-cover object-center"
-                  height="225"
-                  src={featuredService7}
-                  width="400"
-                />
+                <Skeleton className="w-[400px] h-[225px]" />
                 <div className="flex flex-col items-center gap-1">
                   <h3 className="font-bold">Design</h3>
                   <p className="text-sm text-gray-500 dark:text-gray-400">Unlock the potential of your space with our innovative design solutions. From conceptualizing layouts to selecting finishes, our team of creatives brings your vision to life, infusing every project with style, functionality, and personality.</p>
                 </div>
               </div>
               <div className="flex flex-col gap-2 items-center space-y-1">
-                <Image
-                  alt="Services"
-                  className="aspect-video overflow-hidden rounded-lg object-cover object-center"
-                  height="225"
-                  src={featuredService8}
-                  width="400"
-                />
+                <Skeleton className="w-[400px] h-[225px]" />
                 <div className="flex flex-col items-center gap-1">
                   <h3 className="font-bold">Installation</h3>
                   <p className="text-sm text-gray-500 dark:text-gray-400">Seamlessly integrate technology and equipment into your space with our professional installation services. Whether it&apos;s setting up state-of-the-art systems or assembling custom fixtures, our experienced technicians ensure efficient and precise installations, tailored to your specifications.</p>
@@ -157,17 +102,7 @@ export function Services() {
           </div>
           <div className="grid max-[3] gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3xl gap-10 lg:gap-4">
             <div className="group overflow-hidden rounded-xl aspect-square">
-              <Image
-                alt="Project 1"
-                className="object-cover w-full transition-transform group-hover:scale-105 duration-500"
-                height="600"
-                src={featuredService1}
-                style={{
-                  aspectRatio: "600/600",
-                  objectFit: "cover",
-                }}
-                width="600"
-              />
+              <Skeleton className="w-[600px] h-[600px]" />
               <div className="p-4">
                 <h3 className="font-bold">Community Center</h3>
                 <p className="text-sm text-gray-500/70 truncate-2-lines dark:text-gray-500/70">
@@ -176,17 +111,7 @@ export function Services() {
               </div>
             </div>
             <div className="group overflow-hidden rounded-xl aspect-square">
-              <Image
-                alt="Project 2"
-                className="object-cover w-full transition-transform group-hover:scale-105 duration-500"
-                height="600"
-                src="/placeholder.svg"
-                style={{
-                  aspectRatio: "600/600",
-                  objectFit: "cover",
-                }}
-                width="600"
-              />
+              <Skeleton className="w-[600px] h-[600px]" />
               <div className="p-4">
                 <h3 className="font-bold">Urban Redevelopment</h3>
                 <p className="text-sm text-gray-500/70 truncate-2-lines dark:text-gray-500/70">
@@ -195,17 +120,7 @@ export function Services() {
               </div>
             </div>
             <div className="group overflow-hidden rounded-xl aspect-square">
-              <Image
-                alt="Project 3"
-                className="object-cover w-full transition-transform group-hover:scale-105 duration-500"
-                height="600"
-                src="/placeholder.svg"
-                style={{
-                  aspectRatio: "600/600",
-                  objectFit: "cover",
-                }}
-                width="600"
-              />
+              <Skeleton className="w-[600px] h-[600px]" />
               <div className="p-4">
                 <h3 className="font-bold">Coastal Resort</h3>
                 <p className="text-sm text-gray-500/70 truncate-2-lines dark:text-gray-500/70">
@@ -226,17 +141,7 @@ export function Services() {
           </div>
           <div className="grid max-[3] gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3xl gap-10 lg:gap-4">
             <div className="group overflow-hidden rounded-xl aspect-square">
-              <Image
-                alt="Project 1"
-                className="object-cover w-full transition-transform group-hover:scale-105 duration-500"
-                height="600"
-                src="/placeholder.svg"
-                style={{
-                  aspectRatio: "600/600",
-                  objectFit: "cover",
-                }}
-                width="600"
-              />
+              <Skeleton className="w-[600px] h-[600px]" />
               <div className="p-4">
                 <h3 className="font-bold">Community Center</h3>
                 <p className="text-sm text-gray-500/70 truncate-2-lines dark:text-gray-500/70">
@@ -245,17 +150,7 @@ export function Services() {
               </div>
             </div>
             <div className="group overflow-hidden rounded-xl aspect-square">
-              <Image
-                alt="Project 2"
-                className="object-cover w-full transition-transform group-hover:scale-105 duration-500"
-                height="600"
-                src="/placeholder.svg"
-                style={{
-                  aspectRatio: "600/600",
-                  objectFit: "cover",
-                }}
-                width="600"
-              />
+              <Skeleton className="w-[600px] h-[600px]" />
               <div className="p-4">
                 <h3 className="font-bold">Urban Redevelopment</h3>
                 <p className="text-sm text-gray-500/70 truncate-2-lines dark:text-gray-500/70">
@@ -264,17 +159,7 @@ export function Services() {
               </div>
             </div>
             <div className="group overflow-hidden rounded-xl aspect-square">
-              <Image
-                alt="Project 3"
-                className="object-cover w-full transition-transform group-hover:scale-105 duration-500"
-                height="600"
-                src="/placeholder.svg"
-                style={{
-                  aspectRatio: "600/600",
-                  objectFit: "cover",
-                }}
-                width="600"
-              />
+              <Skeleton className="w-[600px] h-[600px]" />
               <div className="p-4">
                 <h3 className="font-bold">Coastal Resort</h3>
                 <p className="text-sm text-gray-500/70 truncate-2-lines dark:text-gray-500/70">
