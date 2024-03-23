@@ -19,7 +19,6 @@ export async function POST(req: NextRequest) {
       html: `<div className="bg-gray-100 min-h-screen flex items-center justify-center">
       <div className="flex mx-auto items-center">
         <div className="flex flex-col  items-start bg-white shadow-lg rounded-lg p-6">
-          <h1 className="text-3xl font-bold text-gray-800 mb-4">An Inquiry</h1>
           <div className="flex flex-col items-start text-gray-600 space-y-2">
             <p><strong>Name:</strong> ${data.name}</p>
             <p><strong>Email:</strong> ${data.email}</p>

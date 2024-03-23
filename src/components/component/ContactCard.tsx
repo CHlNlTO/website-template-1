@@ -77,7 +77,7 @@ export function ContactCard() {
   }
 
   return (
-    <Card className="w-[500px]">
+    <Card className="max-w-lg w-full">
       <CardContent>
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-col space-y-8 pt-5">
