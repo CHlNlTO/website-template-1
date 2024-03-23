@@ -28,9 +28,9 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../ui/select";
 import { sendContactForm } from "@/lib/api";
 import { Textarea } from "../ui/textarea";
+import { LoadingButton } from "../ui/loading-button";
 
 const formSchema = z.object({
   email: z.string().min(2, {
@@ -53,6 +53,9 @@ export function ContactCard() {
 
   const { toast } = useToast()
 
+  const [ loading, setLoading] = useState(false)
+  const [ formStatus, setFormStatus ] = useState(false)
+
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -65,15 +68,24 @@ export function ContactCard() {
 
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
 
-    try {
+    setLoading(true)
+
+    try {  
       await sendContactForm(values)
 
-    } catch (error) {
+      toast({
+        description: "Form has been sent.",
+      });
+
+      setLoading(false)
+      setFormStatus(true);
+
+      form.reset()
       
+    } catch (error: any) {
+      console.log(error.message)
     }
-    toast({
-      description: "Form has been sent.",
-    });
+    
   }
 
   return (
@@ -81,6 +93,11 @@ export function ContactCard() {
       <CardContent>
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-col space-y-8 pt-5">
+          {formStatus && <FormLabel className="pt-5 text-[20px]">
+            <h1>
+              Form has been sent.
+            </h1>
+          </FormLabel>}
           <div className="grid grid-cols-1 gap-7">
             <FormField
               control={form.control}
@@ -139,7 +156,7 @@ export function ContactCard() {
                 <div className="flex flex-col space-y-1.5 items-start">
                   <FormLabel>Message</FormLabel>
                   <FormControl>
-                    <Textarea className="min-h-[150px]" placeholder="Enter your message" {...field} />
+                    <Textarea className="min-h-[100px] max-h-[300px]" placeholder="Enter your message" {...field} />
                   </FormControl>
                 <FormMessage />
                 </div>
@@ -148,7 +165,7 @@ export function ContactCard() {
             )}
           />
       <CardFooter className="flex items-start justify-start">
-        <Button type="submit">Contact Us</Button>
+        <LoadingButton loading={loading} type="submit">Contact Us</LoadingButton>
       </CardFooter>
         </form>
       </Form>
