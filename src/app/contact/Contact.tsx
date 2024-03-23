@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { FaFacebookF, FaInstagram, FaTiktok, FaYoutube } from "react-icons/fa6"
 import { LinkedInLogoIcon, TwitterLogoIcon } from "@radix-ui/react-icons"
+import { ContactCard } from "@/components/component/ContactCard"
 
 interface IconProps {
   className?: string;
@@ -20,22 +21,8 @@ export function Contact() {
             Fill out the form below and we&apos;ll get back to you as soon as possible.
           </p>
         </div>
-        <div className="space-y-4">
-          <div className="grid grid-cols-2 gap-4">
-            <div className="space-y-2">
-              <Label htmlFor="name">Name</Label>
-              <Input id="name" placeholder="Enter your name" />
-            </div>
-            <div className="space-y-2">
-              <Label htmlFor="email2">Email</Label>
-              <Input id="email2" placeholder="Enter your email" />
-            </div>
-          </div>
-          <div className="space-y-2">
-            <Label htmlFor="message2">Message</Label>
-            <Textarea className="min-h-[150px]" id="message2" placeholder="Enter your message" />
-          </div>
-          <Button>Send message</Button>
+        <div className="flex items-center justify-center">
+          <ContactCard />
         </div>
         <div className="space-y-10">
           <h3 className="text-xl font-bold">Connect with us</h3>

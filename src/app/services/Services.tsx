@@ -8,6 +8,9 @@ import featuredService5 from "@/assets/featured_service5.jpg";
 import featuredService6 from "@/assets/featured_service6.jpg";
 import featuredService7 from "@/assets/featured_service7.jpg";
 import featuredService8 from "@/assets/featured_service8.jpg";
+import projectMaterial1 from "@/assets/material_image1.jpg"
+import projectMaterial2 from "@/assets/material_image2.jpg"
+import projectMaterial3 from "@/assets/material_image3.jpg"
 import { ContactCard } from "@/components/component/ContactCard";
 
 export function Services() {
@@ -230,7 +233,7 @@ export function Services() {
                 alt="Project 1"
                 className="object-cover w-full transition-transform group-hover:scale-105 duration-500"
                 height="600"
-                src="/placeholder.svg"
+                src={projectMaterial1}
                 style={{
                   aspectRatio: "600/600",
                   objectFit: "cover",
@@ -249,7 +252,7 @@ export function Services() {
                 alt="Project 2"
                 className="object-cover w-full transition-transform group-hover:scale-105 duration-500"
                 height="600"
-                src="/placeholder.svg"
+                src={projectMaterial2}
                 style={{
                   aspectRatio: "600/600",
                   objectFit: "cover",
@@ -268,7 +271,7 @@ export function Services() {
                 alt="Project 3"
                 className="object-cover w-full transition-transform group-hover:scale-105 duration-500"
                 height="600"
-                src="/placeholder.svg"
+                src={projectMaterial3}
                 style={{
                   aspectRatio: "600/600",
                   objectFit: "cover",
