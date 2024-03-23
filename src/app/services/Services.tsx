@@ -118,7 +118,7 @@ export function Services() {
                 />
                 <div className="flex flex-col items-center gap-1">
                   <h3 className="font-bold">Design</h3>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">Unlock the potential of your space with our innovative design solutions. From conceptualizing layouts to selecting finishes, our team of creatives brings your vision to life, infusing every project with style, functionality, and personality.</p>
+                  <p className="text-sm text-gray-500 dark:text-gray-400">Unlock the potential of your space with our innovative design solutions. From conceptualizing layouts to selecting finishes, our team of creatives brings your vision to life, infusing each project with style, functionality, and personality.</p>
                 </div>
               </div>
               <div className="flex flex-col gap-2 items-center space-y-1">
