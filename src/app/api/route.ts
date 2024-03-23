@@ -14,19 +14,36 @@ export async function POST(req: NextRequest) {
   try {
     await transporter.sendMail({
       ...mailOptions,
-      subject: data.subject,
+      subject: "Customer Inquiry",
       text: `Name: ${data.name}\nEmail: ${data.email}\nMessage: ${data.message}`,
-      html: `<div className="bg-gray-100 min-h-screen flex items-center justify-center">
-      <div className="flex mx-auto items-center">
-        <div className="flex flex-col  items-start bg-white shadow-lg rounded-lg p-6">
-          <div className="flex flex-col items-start text-gray-600 space-y-2">
-            <p><strong>Name:</strong> ${data.name}</p>
-            <p><strong>Email:</strong> ${data.email}</p>
-            <p><strong>Message:</strong> ${data.message}</p>
+      html: `
+        <div style="
+          min-height: 60vh; 
+          center;"
+          >
+          <div style="
+            background-color: #f3f4f6; 
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+            border-radius: 0.5rem; 
+            padding: 1.5rem;"
+            >
+            <div style="
+              display: grid; 
+              grid-template-columns: 1fr; 
+              align-items: flex-start; 
+              color: #4b5563; 
+              margin-bottom: 0.5rem;"
+              >
+              <h1>${data.subject}</h1>
+              <p><strong>Name:</strong> ${data.name}</p>
+              <p><strong>Email:</strong> ${data.email}</p>
+              <p><strong>Message:</strong> ${data.message}</p>
+              <br>
+              <p><strong><i>Note: Do not reply to this email. Instead, use the email provided by the customer.</i></strong></p>
+            </div>
           </div>
         </div>
-      </div>
-    </div>`,
+      `,
     })
 
     return (
