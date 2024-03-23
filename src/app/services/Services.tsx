@@ -16,8 +16,8 @@ import { ContactCard } from "@/components/component/ContactCard";
 export function Services() {
   return (
     <main>
-      <div className="bg-gray-50 py-16">
-        <div className="container px-4 py-1 md:py-10 space-y-6">
+      <div className="bg-gray-50 py-8">
+        <div className="container px-4 py-1 md:py-10 space-y-12">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl">Building the future</h1>
             <p className="max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
@@ -25,7 +25,7 @@ export function Services() {
               sustainability.
             </p>
           </div>
-          <div className="grid w-full grid-cols-1 gap-6 sm:grid-cols-2 md:gap-8 lg:grid-cols-3">
+          <div className="grid w-full grid-cols-1 gap-6 sm:grid-cols-2 md:gap-8 lg:grid-cols-3 space-y-8">
               <div className="flex flex-col gap-2 items-center space-y-1">
                 <Image
                   alt="Services"
