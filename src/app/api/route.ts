@@ -11,6 +11,10 @@ export async function GET() {
 export async function POST(req: NextRequest) {
   const data = await req.json();
 
+  if (!data.name || !data.email || !data.message) {
+    return NextResponse.json({ message: "Please fill in all fields" });
+  }
+
   try {
     await transporter.sendMail({
       ...mailOptions,
